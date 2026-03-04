@@ -24,7 +24,6 @@ header {
 .inicio{
     display: flex;
     gap:3rem
-
 }
 
 .navegacao ul {
@@ -33,7 +32,6 @@ display: flex;
     font-size: 20px;
     gap: 30px;
     margin-top: 26px;
-
 }
 
 .navegacao li {
@@ -62,13 +60,11 @@ display: flex;
     color: #ffffff;
     margin: 1rem;
     margin-top: 1rem;
-
 }
 
 .extras i {
     font-size: 18px;
     transition: transform 0.3s;
-
 }
 
 .extras i:hover {
@@ -83,8 +79,6 @@ display: flex;
     flex-wrap: wrap;
     text-align: center;
     gap: 30px;
-    
-
 }
 .produtos img{
     height: 300px;
@@ -99,7 +93,7 @@ display: flex;
 .produtos p{
     margin: 12px 0px;
 }
-.comprar{
+.carrinho{
     background-color: #8f62c2;
     border-radius: 7px;
     padding: 5px;
@@ -123,4 +117,12 @@ display: flex;
         margin-top: 35px;
         padding-bottom: 1rem;
         padding: 32px;
+}
+.fonte{
+    background-color: #b676ff7c;
+        box-shadow: 3px 3px 10px #8f62c2;
+        margin-top: 20px;
+        padding-bottom: 1rem;
+        padding: 32px;
+        margin-bottom: 35px;
 }
