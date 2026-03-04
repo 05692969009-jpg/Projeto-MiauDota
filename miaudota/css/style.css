@@ -197,9 +197,12 @@ header {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     background: linear-gradient(to right, #682daa, #7f4db8, #8156b3, #8a5dbd, #9c77c7);
     width: 100%;
-    padding-bottom: 15rem;
+    padding-bottom: 3rem;
 }
 
 footer h2 {
@@ -211,11 +214,14 @@ footer p {
     color: white;
     font-size: 1rem;
 }
+footer hr{
+    margin: 0 10rem;
+}
 
 .content {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
 .inf1 {
@@ -243,10 +249,11 @@ footer p {
 .midia {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 2rem;
 }
 
-.midia h3 {
+.midia h4 {
     color: white;
     display: flex;
     justify-content: center;
@@ -263,11 +270,22 @@ footer p {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    gap: 10%;
+    gap: 6rem;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+.subfooter{
+    display: flex;
+    justify-content:center;
+    background-color: #562b88;
+}
+.subfooter p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 13px;
 }
