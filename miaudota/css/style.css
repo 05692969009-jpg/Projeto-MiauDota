@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "SN Pro", sans-serif
 }
 
 body {
-    background-color: #ffffff;
-    font-family: "SN Pro", sans-serif
+    background-color: #f0f0f0;
+    font-family: "Inter", sans-serif;
+
 }
 
 .logo img {
@@ -20,17 +22,17 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(#bf88ff,#d5b1ff);
+    background: linear-gradient(#bf88ff, #d5b1ff);
     align-items: center;
 }
-.inicio{
-    display: flex;
-    gap:3rem
 
+.inicio {
+    display: flex;
+    gap: 3rem
 }
 
 .navegacao ul {
-display: flex;
+    display: flex;
     list-style: none;
     font-size: 20px;
     gap: 30px;
@@ -90,7 +92,7 @@ display: flex;
     height: 480px;
 }
 
-.cartoes {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,9 +101,9 @@ display: flex;
     margin: 1rem;
 }
 
-.cartao img {
-    width: 280px;
-    height: 200px;
+.card img {
+    width: 23rem;
+    height: 16rem
 }
 
 .disponiveis {
@@ -110,12 +112,11 @@ display: flex;
 }
 
 .busca {
-    font-family: monospace;
     font-size: 20px;
     margin: 20px;
 }
 
-.cartao {
+.card {
     display: flex;
     display: block;
     background-color: #ffffff;
@@ -129,47 +130,46 @@ display: flex;
 
 }
 
-.cartao:hover {
+.card:hover {
     cursor: pointer;
     background-color: #ececec62;
     transform: scale(1.01);
 }
 
-.cartao a {
+.buttonA {
     text-decoration: none;
-    background: linear-gradient(to right, #DB10D2, #DB46D1);
+    background: linear-gradient(#a75aff);
     padding: 7px;
     color: rgb(255, 255, 255);
-    font-family: monospace;
+
     font-size: 14px;
     border-radius: 8px;
     padding-left: 89px;
     padding-right: 89px;
     transition: transform 0.5s;
-    font-family: "SN Pro", sans-serif
 
 }
 
-.cartao a:hover {
+.buttonA:hover {
     text-decoration: none;
     background: white;
     padding: 7px;
-    color: #DB10D2;
-    font-family: monospace;
+    color: #a75aff;
+
     font-size: 14px;
     border-radius: 8px;
     padding-left: 89px;
     padding-right: 89px;
     transform: scale(0.9);
-    font-family: "SN Pro", sans-serifd
+
 
 }
 
-.cartao h2 {
+.card h2 {
     margin-left: 10px;
 }
 
-.cartao h4 {
+.card h4 {
     position: absolute;
     right: 8px;
     bottom: 103px;
@@ -182,7 +182,7 @@ display: flex;
 
 }
 
-.cartoes a {
+.cards a {
     position: absolute;
     right: 9px;
     bottom: 5px;
@@ -194,5 +194,80 @@ display: flex;
     position: absolute;
     left: 13px;
     bottom: 45px;
-    font-family: "SN Pro", sans-serif
+}
+
+footer {
+    background: linear-gradient(to right, #682daa, #7f4db8, #8156b3, #8a5dbd, #9c77c7);
+    width: 100%;
+    padding-bottom: 15rem;
+}
+
+footer h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.inf1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+.inf1 img {
+    width: 12rem;
+}
+
+.inf2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.midia {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.midia h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+
+}
+
+.midia a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 10%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
