@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,70 +8,237 @@
     <link rel="shortcut icon" href="img/logomiaudota.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./miaudota/css/cadastre_um_gato.css">
-    <link rel="stylesheet" href="css/cadastre_um_gato.css">
+        <link rel="stylesheet" href="./miaudota/css/cadastre_um_gato.css">
+        <link rel="stylesheet" href="css/cadastre_um_gato.css">
 </head>
-
 <body>
-    <header>
+      <header>
         <div class="inicio">
             <div class="logo">
-                <a href="index.html"><img src="img/logoSite.png" alt="logo MiaudotaPel"></a>
+               <a href="index.html"><img src="img/logoSite.png" alt="logo MiaudotaPel"></a>
             </div>
             <div class="navegacao">
                 <ul>
                     <li> <a href="como_adotar.html">Como Adotar</a></li>
                     <li> <a href="sobre_nos.html">Sobre Nós</a></li>
+                    <li> <a href="loja.html">Loja</a></li>
                     <li><a href="cadastre_um_gato.html">Cadastre um gato</a></li>
                 </ul>
             </div>
         </div>
         <div class="extras">
             <a href="favoritos.html"><i class="bi bi-box2-heart-fill"></i></a>
+           <a href="filtar.html"> <i class="bi bi-search"></i></a>
         </div>
     </header>
 
 
     <main>
-        <nav>
+    <!-- <nav>
 
-            <div>
-                <h1>Tipo de anúncio</h1>
-                <span>Anúncio de Adoção</span>
-                <span>Anúncio de Procura-se</span>
-            </div>
+        <div>
+            <h1>Tipo de anúncio</h1>
+            <span>Anúncio de Adoção</span>
+            <span>Anúncio de Procura-se</span>
+        </div>
 
-            <div>
-                <h2>Foto Principal<span>*</span></h2>
-                <input type="file" name="foto">
-                <p>⚠️ NÃO SÃO ACEITAS IMAGENS QUE CONTENHAM DESENHOS OU TEXTOS</p>
+        <div>
+            <h2>Foto Principal<span>*</span></h2>
+            <input type="file" name="foto">
+            <p>⚠️ NÃO SÃO ACEITAS IMAGENS QUE CONTENHAM DESENHOS OU TEXTOS</p>
 
-                <h2>Galeria de Fotos</h2>
-                <input type="file" name="foto">
-                <p>maximum file size: 3 MB</p>
-            </div>
+            <h2>Galeria de Fotos</h2>
+            <input type="file" name="foto">
+            <p>maximum file size: 3 MB</p>
+        </div>
 
-            <div>
-                <h2>Sexo</h2>
+        <div>
+            <h2>Sexo</h2>
 
-                <input type="radio" name="genero" value="m" id="masc">
-                <label for="masc">Mascho</label>
+            <input type="radio" name="genero" value="m" id="masc">
+            <label for="masc">Mascho</label>
 
-                <input type="radio" name="genero" value="f" id="fem">
-                <label for="fem">Femea</label>
-            </div>
+            <input type="radio" name="genero" value="f" id="fem">
+            <label for="fem">Femea</label>
+        </div>
 
-            <div>
-                <h2>Raça</h2>
+        <div>
+            <h2>Raça</h2>
 
-                <label for="raca_do_animal">Raça:</label>
+            <label for="raca_do_animal">Raça:</label>
 
-                <select id="racaGato" name="racaGato">
-                    <option value="">Selecione</option>
+            <select id="racaGato" name="racaGato">
+                <option value="">Selecione</option>
                     <option value="abyssinian">Abissínio</option>
                     <option value="aphrodite_giant">Gigante Afrodite</option>
                     <option value="aegean">Egeu</option>
-                    <option value="american_bobtail">Bobtail Americano</option>
+                    <option value="american_bobtail">Bobtail Americano</option> 
+                    <option value="american_curl">Curl Americano</option>
+                    <option value="american_shorthair">Pelo Curto Americano</option>
+                    <option value="american_wirehair">Pelo Duro Americano</option>
+                    <option value="arabian_mau">Mau Árabe</option>
+                    <option value="australian_mist">Névoa Australiana</option>
+                    <option value="balinese">Balinês</option>
+                    <option value="bambino">Bambino</option>
+                    <option value="bengal">Bengal</option>
+                    <option value="birman">Birmanês</option>
+                    <option value="burmese">Birmanês (Burmese)</option>
+                    <option value="bombay">Bombaim</option>
+                    <option value="brazilian_shorthair">Pelo Curto Brasileiro</option>
+                    <option value="british_longhair">Pelo Longo Britânico</option>
+                    <option value="british_shorthair">Pelo Curto Britânico</option>
+                    <option value="burmilla">Burmilla</option>
+                    <option value="california_spangled">Malhado da Califórnia</option>
+                    <option value="chantilly_tiffany">Chantilly-Tiffany</option>
+                    <option value="chartreux">Chartreux</option>
+                    <option value="chausie">Chausie</option>
+                    <option value="colorpoint_shorthair">Colorpoint de Pelo Curto</option>
+                    <option value="cornish_rex">Cornish Rex</option>
+                    <option value="cymric">Cymric</option>
+                    <option value="devon_rex">Devon Rex</option>
+                    <option value="donskoy">Donskoy</option>
+                    <option value="egyptian_mau">Mau Egípcio</option>
+                    <option value="european_shorthair">Pelo Curto Europeu</option>
+                    <option value="exotic_shorthair">Exótico de Pelo Curto</option>
+                    <option value="german_rex">Rex Alemão</option>
+                    <option value="havana_brown">Havana Marrom</option>
+                    <option value="highlander">Highlander</option>
+                    <option value="himalayan">Himalaio</option>
+                    <option value="japanese_bobtail">Bobtail Japonês</option>
+                    <option value="khao_manee">Khao Manee</option>
+                    <option value="korat">Korat</option>
+                    <option value="kurilian_bobtail">Bobtail Kuriliano</option>
+                    <option value="laperm">LaPerm</option>
+                    <option value="lykoi">Lykoi (gato-lobisomem)</option>
+                    <option value="maine_coon">Maine Coon</option>
+                    <option value="manx">Manx</option>
+                    <option value="minskin">Minskin</option>
+                    <option value="munchkin">Munchkin</option>
+                    <option value="nebelung">Nebelung</option>
+                    <option value="norwegian_forest">Floresta Norueguesa</option>
+                    <option value="ocicat">Ocicat</option>
+                    <option value="oriental_longhair">Oriental de Pelo Longo</option>
+                    <option value="oriental_shorthair">Oriental de Pelo Curto</option>
+                    <option value="persian">Persa</option>
+                    <option value="peterbald">Peterbald</option>
+                    <option value="pixie_bob">Pixie-bob</option>
+                    <option value="ragamuffin">Ragamuffin</option>
+                    <option value="ragdoll">Ragdoll</option>
+                    <option value="russian_blue">Azul Russo</option>
+                    <option value="savannah">Savannah</option>
+                    <option value="scottish_fold">Scottish Fold</option>
+                    <option value="selkirk_rex">Selkirk Rex</option>
+                    <option value="serengeti">Serengeti</option>
+                    <option value="siberian">Siberiano</option>
+                    <option value="singapura">Singapura</option>
+                    <option value="snowshoe">Snowshoe</option>
+                    <option value="somali">Somali</option>
+                    <option value="sphynx">Sphynx (sem pelo)</option>
+                    <option value="thai">Thai</option>
+                    <option value="tonkinese">Tonquinês</option>
+                    <option value="toyger">Toyger</option>
+                    <option value="turkish_angora">Angorá Turco</option>
+                    <option value="turkish_van">Van Turco</option>
+                    <option value="ukrainian_levkoy">Levkoy Ucraniano</option>
+                    <option value="york_chocolate">York Chocolate</option>
+            </select>
+        </div>
+        <div>
+    <h2>Faixa Etária</h2>
+
+    <label for="faixa_etaria">Idade:</label>
+
+    <select id="faixaEtaria" name="faixaEtaria">
+        <option value="">Selecione</option>
+        <option value="filhote">Filhote (até 1 ano)</option>
+        <option value="jovem">Jovem (1 a 3 anos)</option>
+        <option value="adulto">Adulto (3 a 7 anos)</option>
+        <option value="senior">Sênior (7 a 12 anos)</option>
+        <option value="geriatrico">Geriátrico (acima de 12 anos)</option>
+    </select>
+</div>
+<div>
+    <h2>Porte do Animal</h2>
+
+    <label for="porte_animal">Porte:</label>
+
+    <select id="porteAnimal" name="porteAnimal">
+        <option value="">Selecione</option>
+        <option value="mini">Pequeno (até 6kg)</option>
+        <option value="pequeno">Médio (6kg a 12kg)</option>
+        <option value="medio">Grande (12kg a 25kg)</option>
+    </select>
+</div>
+<div>
+    <h2>Nome do Animal: <span>*</span></h2>
+    <label for="nome">Eu sou o(a):</label>
+<input type="text" id="nome_animal" name="nomeGato" required>
+</div>
+<div>
+    <label for="nascimento">Data de Nascimento:</label>
+<input type="date" id="nascimento" name="nascimento">
+</div>
+<div>
+    <h2>Nome do Responsavel: <span>*</span></h2>
+    <label for="nome":></label>
+<input type="text" id="nome_animal" name="nomeGato" required>
+</div>
+</div>
+    </nav> -->
+
+<main class="containerForm">
+
+    <form class="formAnimal">
+
+        <!-- Tipo de anúncio -->
+        <div class="tipoAnuncio">
+            <h3>Tipo de Anúncio</h3>
+
+            <label>
+                <input type="radio" name="tipo">
+                Anúncio de Adoção
+            </label>
+
+            <label>
+                <input type="radio" name="tipo">
+                Anúncio de Procura-se
+            </label>
+        </div>
+
+
+        <!-- Fotos -->
+        <div class="boxFotos">
+
+            <div class="fotoPrincipal">
+                <h2>Foto Principal *</h2>
+                <p class="aviso">⚠ Não são aceitas imagens que contenham desenhos ou textos.</p>
+
+                <input type="file">
+            </div>
+
+
+            <div class="galeriaFotos">
+                <h2>Galeria de Fotos</h2>
+
+                <input type="file">
+
+                <p class="limite">Maximum file size: 3 MB</p>
+            </div>
+
+        </div>
+
+
+        <!-- Selects -->
+        <div class="linhaSelect">
+
+            <div class="campo">
+                <label>Raça <span>*</span></label>
+                <select>
+                    <option>Selecione a raça</option>
+                    <option value="abyssinian">Abissínio</option>
+                    <option value="aphrodite_giant">Gigante Afrodite</option>
+                    <option value="aegean">Egeu</option>
+                    <option value="american_bobtail">Bobtail Americano</option> 
                     <option value="american_curl">Curl Americano</option>
                     <option value="american_shorthair">Pelo Curto Americano</option>
                     <option value="american_wirehair">Pelo Duro Americano</option>
@@ -143,52 +309,62 @@
                     <option value="york_chocolate">York Chocolate</option>
                 </select>
             </div>
-            <div>
-                <h2>Faixa Etária</h2>
 
-                <label for="faixa_etaria">Idade:</label>
-
-                <select id="faixaEtaria" name="faixaEtaria">
-                    <option value="">Selecione</option>
-                    <option value="filhote">Filhote (até 1 ano)</option>
-                    <option value="jovem">Jovem (1 a 3 anos)</option>
-                    <option value="adulto">Adulto (3 a 7 anos)</option>
-                    <option value="senior">Sênior (7 a 12 anos)</option>
-                    <option value="geriatrico">Geriátrico (acima de 12 anos)</option>
+            <div class="campo">
+                <label>Sexo *</label>
+                <select>
+                    <option>Selecione o Sexo</option>
                 </select>
             </div>
-            <div>
-                <h2>Porte do Animal</h2>
 
-                <label for="porte_animal">Porte:</label>
-
-                <select id="porteAnimal" name="porteAnimal">
-                    <option value="">Selecione</option>
-                    <option value="mini">Pequeno (até 6kg)</option>
-                    <option value="pequeno">Médio (6kg a 12kg)</option>
-                    <option value="medio">Grande (12kg a 25kg)</option>
+            <div class="campo">
+                <label>Faixa Etária *</label>
+                <select>
+                    <option>Selecione a Faixa Etária</option>
                 </select>
             </div>
-            <div>
-                <h2>Nome do Animal: <span>*</span></h2>
-                <label for="nome">Eu sou o(a):</label>
-                <input type="text" id="nome_animal" name="nomeGato" required>
+            
+            <div class="campo">
+                <label>Porte *</label>
+                <select>
+                    <option>Selecione o Porte</option>
+                </select>
             </div>
-            <div>
-                <label for="nascimento">Data de Nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento">
+        </div>
+        <hr>
+        <!-- Linha nome -->
+        <div class="linhaInputs">
+            <div class="campo">
+                <label>Nome do Animal *</label>
+                <input type="text">
             </div>
-            <div>
-                <h2>Nome do Responsavel: <span>*</span></h2>
-                <label for="nome" :></label>
-                <input type="text" id="nome_animal" name="nomeGato" required>
+            <div class="campo">
+                <label>Idade</label>
+                <input type="text">
             </div>
+            <div class="campo">
+                <label>Responsável *</label>
+                <input type="text">
             </div>
-        </nav>
-    </main>
+        </div>
+        <!-- Linha contato -->
+        <div class="linhaContato">
+            <div class="campo">
+                <label>E-mail do Responsável *</label>
+                <input type="email">
+            </div>
+            <div class="campo">
+                <label>Whatsapp do Responsável *</label>
+                <input type="text" placeholder="________">
+                <small>Ex: 11981110022 - Apenas os DDD e Números</small>
+            </div>
+        </div>
+
+    </form>
+</main>
 
 
-    <footer>
+     <footer>
         <div class="content">
             <div>
                 <div class="inf1">
@@ -233,5 +409,4 @@
         <p><i class="bi bi-c-circle"></i>2026 MiauDota Cat Adoption. All Rights Reserved.</p>
     </div>
 </body>
-
 </html>
