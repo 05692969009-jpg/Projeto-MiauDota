@@ -1,0 +1,34 @@
+CREATE DATABASE site_adocao;
+
+USE site_adocao;
+
+CREATE TABLE usuario(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(70) NOT NULL UNIQUE,
+telefone VARCHAR(20) NOT NULL UNIQUE,
+cpf VARCHAR(14) NOT NULL UNIQUE,
+senha VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE gato(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(30) NOT NULL,
+idade VARCHAR(20) NOT NULL,
+descricao TEXT NOT NULL,
+sexo VARCHAR(6) ENUM("Macho" , "Fêmea") NOT NULL,
+peso VARCHAR(12) NOT NULL,
+cadastrado BOOLEAN NOT NULL,
+vacinado BOOLEAN NOT NULL
+id_usuario INT NOT NULL,
+FOREIGN KEY (id_usuario) REFERENCES usuario (id)
+);
+
+
+CREATE TABLE adocao(
+id INT PRIMARY KEY AUTO_INCREMENT 
+id_usuario INT NOT NULL,
+id_gato INT NOT NULL,
+FOREIGN KEY (id_usuario) REFERENCES usuario (id),
+FOREIGN KEY (id_gato) REFERENCES gato (id)
+);
