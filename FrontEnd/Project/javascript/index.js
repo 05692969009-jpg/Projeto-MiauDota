@@ -10,9 +10,7 @@ function abrirModal(titulo, desc,img){
 
     modal.showModal()
 }
-// adotar.onclick = function(){
-//     modal.showModal()
-// }
+
 fecharPop.onclick = function(){
     modal.close()
 }
