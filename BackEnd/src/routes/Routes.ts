@@ -1,9 +1,13 @@
+import express from 'express'
 import { Router } from 'express';
 import { usuariosController } from '../controllers/usuariosController.js';
 import { gatosController } from '../controllers/catController.js';
 import { pedidosController } from '../controllers/pedidosController.js';
-
+const app = express()
+const port = 3000
 const routes = Router();
+app.use(express.json())
+
 
 // --- ROTAS DE USUÁRIOS ---
 routes.get('/usuarios', usuariosController.listar);
