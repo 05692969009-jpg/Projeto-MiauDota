@@ -1,3 +1,6 @@
 npm init -y
 npm install express typescript tsx knex mysql2 @types/express @types/node
 npx tsc --init
+
+para rodar a Api
+npx ts_node

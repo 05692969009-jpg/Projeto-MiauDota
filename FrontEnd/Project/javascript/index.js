@@ -1,3 +1,8 @@
+function mostrarGatos(){
+    const resposta =
+}
+
+
 const adotar = document.querySelector(".buttonA")
 const modal = document.querySelector("dialog")
 const fecharPop = document.querySelector("dialog button")
