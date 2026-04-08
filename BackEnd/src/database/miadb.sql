@@ -30,7 +30,7 @@ id INT PRIMARY KEY AUTO_INCREMENT,
 data_horas DATETIME NOT NULL,
 id_usuario INT NOT NULL,
 id_gato INT NOT NULL,
-status ENUM("pendenetente","rekuzado","feitoOCarreto")
+status ENUM("pendente","recusado","feito"),
 FOREIGN KEY (id_usuario) REFERENCES usuario (id),
 FOREIGN KEY (id_gato) REFERENCES gato (id)
 );
