@@ -14,3 +14,5 @@ function abrirModal(titulo, desc,img){
 fecharPop.onclick = function(){
     modal.close()
 }
+
+
