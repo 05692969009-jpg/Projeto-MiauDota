@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from 'jsonwebtoken'
 
-export const registraAuthmeio = async (req: Request, res: Response, next:NextFunction) => {
+export const Authmeio = async (req: Request, res: Response, next:NextFunction) => {
  const authcabeca = req.headers.authorization
  if(!authcabeca || !authcabeca.startsWith('Bearer')){
     res.status(401).json({message:"quem é vc?"})
