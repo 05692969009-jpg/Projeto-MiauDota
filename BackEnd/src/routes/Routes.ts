@@ -2,7 +2,6 @@ import express from 'express'
 import { Router } from 'express';
 import { 
   listarUsuarios, 
-  criarUsuario, 
   buscarUsuario, 
   atualizarUsuario, 
   deletarUsuario 
@@ -20,12 +19,17 @@ import {
   atualizarPedido, 
   deletarPedido 
 } from '../controllers/pedidosController.js';
+import { login, registrar } from '../controllers/authcontroller.js';
+import { registraAuthmeio } from '../middleware/auth.js';
 
 const routes = Router();
 
+//rota AUTH
+routes.post('/login', login)
+routes.post('/registrar', registrar)
+
 // --- ROTAS DE USUÁRIOS ---
-routes.get('/usuarios', listarUsuarios);
-routes.post('/usuarios', criarUsuario);
+routes.get('/usuarios', registraAuthmeio, listarUsuarios);
 routes.get('/usuarios/:id', buscarUsuario);
 routes.put('/usuarios/:id', atualizarUsuario);
 routes.delete('/usuarios/:id', deletarUsuario);

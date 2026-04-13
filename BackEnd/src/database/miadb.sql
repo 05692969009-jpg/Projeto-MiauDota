@@ -1,3 +1,4 @@
+DROP DATABASE miadb;
 CREATE DATABASE miadb;
 
 USE miadb;
@@ -8,7 +9,8 @@ nome VARCHAR(100) NOT NULL,
 email VARCHAR(70) NOT NULL UNIQUE,
 telefone VARCHAR(20) NOT NULL UNIQUE,
 cpf VARCHAR(14) NOT NULL UNIQUE,
-senha VARCHAR(30) NOT NULL
+senha VARCHAR(255) NOT NULL,
+bloqueado BOOLEAN DEFAULT 0
 );
 
 CREATE TABLE gato(
@@ -34,21 +36,12 @@ idade ENUM("filhote", "jovem" , "adulto", "senior", "geriatrico") NOT NULL,
 descricao TEXT NOT NULL,
 sexo ENUM("Macho" , "Fêmea") NOT NULL,
 porte ENUM("pequeno", "médio" , "grande") NOT NULL,
-foto_principal VARCHAR(255),  -- Link da imagem
+foto_principal TEXT,  
 cadastrado BOOLEAN DEFAULT FALSE NOT NULL,
 vacinado BOOLEAN DEFAULT FALSE NOT NULL,
 id_usuario INT NOT NULL,
 FOREIGN KEY (id_usuario) REFERENCES usuario (id)
 );
--- * @param {string} nome - Nome do gato
--- * @param {string} raca - Raça do gato
--- * @param {number} idade - Idade do gato
--- * @param {string} descricao - Descrição do gato
--- * @param {string} sexo - Sexo do gato
--- * @param {string} porte - Porte do gato
--- * @param {string} foto_principal - Foto principal do gato
--- * @param {boolean} vacinado - Se o gato é vacinado
--- * @param {number} id_usuario - ID do usuário
 
 CREATE TABLE pedido_adocao(
 id INT PRIMARY KEY AUTO_INCREMENT,
