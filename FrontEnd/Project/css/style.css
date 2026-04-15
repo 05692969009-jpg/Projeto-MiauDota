@@ -61,7 +61,32 @@ header {
 }
 
 
+.extras svg{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: #ffffff;
+    margin: 1rem;
+    margin-top: 1rem;
 
+
+}
+
+.extras svg{
+    font-size: 25px;
+    transition: transform 0.3s;
+
+}
+
+.extras svg:hover {
+    transform: scale(1.9);
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.extras svg {
+    color: #ebebeb;
+}
 .extras {
     display: flex;
     justify-content: center;
@@ -87,6 +112,12 @@ header {
 
 .extras a {
     color: #ebebeb;
+}
+
+#perfil_usuario {
+    display: flex;
+    flex-direction: column;
+
 }
 
 #banner {
