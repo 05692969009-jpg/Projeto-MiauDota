@@ -343,16 +343,6 @@ footer hr {
     min-width: 350px;
 }
 
-.carrocel {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1.2rem;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: mandatory;
-
-}
- 
 .cats {
     background-color: #562b88;
     min-height: 350px;
