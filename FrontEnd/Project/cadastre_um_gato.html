@@ -64,8 +64,8 @@
 
             <div class="fotoPrincipal">
                 <h2>Foto Principal *</h2>
-                <input type="url">
-                <p class="limite">bote aqui a foto do gato que você está cadastrando</p>
+                <input type="url" id="fotoAnimal">
+                <p class="limite">bote aqui o link da foto do gato que você está cadastrando</p>
             </div>
 
 
@@ -172,19 +172,32 @@
     </select>
                 </select>
             </div>
-            
-            <div class="campo" >
-                <label>Porte: <span>*</span></label>
-                    <select id="porteAnimal">
-                    <option>Selecione o Porte</option>
-                    <option value="mini">Pequeno (até 6kg)</option>
-                    <option value="pequeno">Médio (6kg a 12kg)</option>
-                    <option value="medio">Grande (12kg a 25kg)</option>
-                </select>
+            <div class="campo">
+                <label for="descricao">descrição</label>
+           <input type="text" name="descricao" id="descricao">
+           <p class="limite">bote aqui uma breve descrição do seu gatinho</p>
             </div>
+
+            <div class="campo">
+                <label>Vacinado</label>
+                <select id="animalVacinado">
+                    <option>Selecione se o seu gato é vacinado</option>
+                    <option value="true">sim</option>
+                    <option value="false">não</option>
+                </select>
+                </div>
+
+                  <div class="campo">
+                <label>castrado</label>
+                <select id="animalCastrado">
+                    <option>Selecione se o seu gato é castrado</option>
+                    <option value="true">sim</option>
+                    <option value="false">não</option>
+                </select>
+                </div>
+            
         </div>
         <hr>
-        <!-- Linha nome -->
     <button type="submit">Enviar</button>
         
 

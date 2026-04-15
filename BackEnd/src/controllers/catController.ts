@@ -34,16 +34,24 @@ export const buscarGato = async (req: Request, res: Response) => {
 };
 
 export const criarGato = async (req: Request, res: Response) => {
+  console.log("FUI CHAMADO");
+  
+
   try {
-    const { nome, raca, idade, descricao, sexo, porte, foto_principal, cadastrado, castrado, vacinado } = req.body;
-const id_usuario = 1
+    console.log(req.body);
+    
+    const { nome, raca, idade, descricao, sexo, foto_principal, castrado, vacinado } = req.body;
+    console.log(typeof vacinado);
+    console.log(typeof castrado);
+    
+    const id_usuario = 1
+const cadastrado = true
     const [id] = await db("gato").insert({
       nome,
       raca,
       idade,
       descricao,
       sexo,
-      porte,
       foto_principal,
       cadastrado: cadastrado || false,
       castrado: castrado || false,

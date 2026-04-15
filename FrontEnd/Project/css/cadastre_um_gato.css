@@ -85,6 +85,7 @@ display: flex;
 .formAnimal{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -132,11 +133,13 @@ display: flex;
 
 .linhaSelect{
     display: flex;
+
     gap: 20px;
 }
 
 .campo{
     display: flex;
+   
     flex-direction: column;
     width: 100%;
 }
@@ -152,6 +155,7 @@ input{
 
 .linhaInputs{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
