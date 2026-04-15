@@ -2,25 +2,25 @@
 
 const adotar = document.querySelector(".buttonA")
 const modal = document.querySelector("dialog")
-const fecharPop = document.querySelector("dialog button")
+const fecharPop = document.querySelector(".fechadorDeModal")
 
 
-function abrirModal(titulo, desc,img){
-    document.querySelector(".modal-img").src = img
-    document.querySelector(".modal-titulo").innerHTML = titulo
+function abrirModal(foto_principal,nome,descricao,idade,sexo,vacinado,castrado,raca){
+    document.querySelector(".modal-img").src = foto_principal
+    document.querySelector(".modal-titulo").innerHTML = nome
     document.querySelector(".desc").innerHTML = descricao
-    document.querySelector("idade").innerHTML = idade
-    document.querySelector("sexo").innerHTML = sexo
-    document.querySelector("vacinado").innerHTML = vacinado
-    document.querySelector("castrado").innerHTML = castrado
-    document.querySelector("raca").innerHTML = raca
+    document.querySelector(".idade").innerHTML = idade
+    document.querySelector(".sexo").innerHTML = sexo
+    document.querySelector(".vacinado").innerHTML = vacinado
+    document.querySelector(".castrado").innerHTML = castrado
+    document.querySelector(".raca").innerHTML = raca
 
     modal.showModal()
 }
 
-fecharPop.onclick = function(){
-    modal.close()
-}
+// fecharPop.onclick = function(){
+//     modal.close()
+// }
 
 async function carregarGatos() {
     const response = await fetch('http://localhost:3000/gatos')
@@ -32,6 +32,8 @@ async function carregarGatos() {
     //  <h4>=${g.idade}</h4> <dialog><p>=${g.descricao}</p></dialog>, <dialog><p class="sexo">=${g.sexo}</p></dialog>,
     //  <dialog><img class="modal-img"=${g.foto_principal}>,<dialog><p class="vacinado">=${g.vacinado}</p></dialog>, <dialog><p class="castrado">= ${g.castrado}</p></dialog>`
     // ).join("")
+    console.log(data);
+    
     select.innerHTML = data.map(g => `
                         <div class="card">
                     <img src="${g.foto_principal}" alt="gato filhote tricolor">
@@ -49,7 +51,7 @@ async function carregarGatos() {
                         <p class="vacinado">${g.vacinado}</p>
                         <p class="castrado">${g.castrado}</p>
                         <p class="raca">${g.raca}</p>
-                        <button>Fechar</button>
+                        <button class="fechadorDeModal">Fechar</button>
                     </dialog>
                 </div>
         `)
