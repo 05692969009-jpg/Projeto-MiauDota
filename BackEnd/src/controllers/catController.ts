@@ -46,8 +46,8 @@ const id_usuario = 1
       porte,
       foto_principal,
       cadastrado: cadastrado || false,
-      vacinado: vacinado || false,
       castrado: castrado || false,
+      vacinado: vacinado || false,
       id_usuario
     });
 
