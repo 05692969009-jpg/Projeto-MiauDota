@@ -15,13 +15,15 @@ document.getElementById("formAnimal").addEventListener("submit", async (g)=> {
     const idade = document.getElementById("faixaEtaria").value
     const foto_principal = document.getElementById("fotoAnimal").value
     const descricao = document.getElementById("descricao").value
+    const vacinado = document.getElementById("animalVacinado").value
+    const castrado = document.getElementById("animalCastrado").value
 
   
     
 
     console.log(    { nome, raca, idade, descricao, sexo, porte, foto_principal, cadastrado, vacinado }
 );
-    { nome, raca, idade, descricao, sexo, porte, foto_principal, cadastrado, vacinado }
+    
     
 
     const response = await fetch("http://localhost:3000/gatos", {
