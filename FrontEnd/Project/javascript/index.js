@@ -15,6 +15,7 @@ function abrirModal(foto_principal, nome, descricao, idade, sexo, vacinado, cast
     document.querySelector(".castrado").innerHTML = castrado
     document.querySelector(".raca").innerHTML = raca
 
+    document.querySelector(".modal_gatos").style.display = "block"
   
 }
 
@@ -42,8 +43,8 @@ async function carregarGatos() {
                     <p class="stats"><i class="bi bi-patch-check"></i>${g.vacinado}</p>
                     <p class="stats"><i class="bi bi-patch-check"></i>${g.castrado}</p>
                     <a class="buttonA" onclick="abrirModal('${g.foto_principal}','${g.nome}','${g.descricao}','${g.foto_principal}', '${g.idade}', '${g.sexo}', '${g.vacinado}', '${g.castrado}', '${g.raca}')" >Quero Adotar</a>
-                    <dialog>
-                         <img src="${g.foto_principal}" alt="" class="modal-img">
+                    <div class ="modal_gatos">
+                        <img src="${g.foto_principal}" alt="" class="modal-img">
                         <h1 class="modal-titulo">${g.nome}</h1>
                         <p class="desc">${g.descricao}</p>
                         <p class="idade">${g.idade}</p>
@@ -52,7 +53,7 @@ async function carregarGatos() {
                         <p class="castrado">${g.castrado}</p>
                         <p class="raca">${g.raca}</p>
                         <button class="fechadorDeModal">Fechar</button>
-                    </dialog>
+                    </div>
                 </div>
         `)
 
