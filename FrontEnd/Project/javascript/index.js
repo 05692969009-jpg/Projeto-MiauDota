@@ -33,11 +33,6 @@ async function carregarGatos() {
     const select = document.getElementById("cards")
     console.log(select);
 
-    // select.innerHTML = data.map(g => `<h2> =${g.nome}</h2> <dialog><p class="raca">=${g.raca}</p></dialog>,
-    //  <h4>=${g.idade}</h4> <dialog><p>=${g.descricao}</p></dialog>, <dialog><p class="sexo">=${g.sexo}</p></dialog>,
-    //  <dialog><img class="modal-img"=${g.foto_principal}>,<dialog><p class="vacinado">=${g.vacinado}</p></dialog>, <dialog><p class="castrado">= ${g.castrado}</p></dialog>`
-    // ).join("")
-    console.log(data);
 
     select.innerHTML = data.map(g => `
                         <div class="card">
@@ -57,7 +52,7 @@ async function carregarGatos() {
                         <p class="vacinado">${g.vacinado}</p>
                         <p class="castrado">${g.castrado}</p>
                         <p class="raca">${g.raca}</p>
-                        <button onclick="fechadorDeModal()">Fechar</button>
+                        <button class = "buttonA"onclick="fechadorDeModal()">Fechar</button>
                     </div>
         `)
 
