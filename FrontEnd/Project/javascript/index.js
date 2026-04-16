@@ -19,6 +19,10 @@ function abrirModal(foto_principal, nome, descricao, idade, sexo, vacinado, cast
   
 }
 
+function fechadorDeModal(){
+    document.querySelector(".modal_gatos").style.display = "none"
+}
+
 // fecharPop.onclick = function(){
 //     modal.close()
 // }
@@ -53,7 +57,7 @@ async function carregarGatos() {
                         <p class="vacinado">${g.vacinado}</p>
                         <p class="castrado">${g.castrado}</p>
                         <p class="raca">${g.raca}</p>
-                        <button class="fechadorDeModal">Fechar</button>
+                        <button onclick="fechadorDeModal()">Fechar</button>
                     </div>
         `)
 

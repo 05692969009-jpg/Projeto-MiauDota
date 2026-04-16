@@ -385,17 +385,22 @@ footer hr {
 /* Modal */
 
 .modal_gatos{
- position: absolute;
- background-color: #682daa;
- border:coral solid 5px;
+position: absolute;
+background-color: #682daa;
+text-align: center;
+border:#58288f solid 5px;
 display: none;
-top:0;
-left: 0;
-height: 5vh;
-width: 500px;
+
+height: 1000px;
+width: 1000px;
+
 
 }
 .modal_gatos img{
-    width: 250px;
-    height: 250px;
+    width: 750px;
+    height: 750px;
+}
+.modal_gatos button{
+    width: 300px;
+    height: 50px;
 }
