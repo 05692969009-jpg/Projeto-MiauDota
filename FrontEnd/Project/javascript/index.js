@@ -43,6 +43,7 @@ async function carregarGatos() {
                     <p class="stats"><i class="bi bi-patch-check"></i>${g.vacinado}</p>
                     <p class="stats"><i class="bi bi-patch-check"></i>${g.castrado}</p>
                     <a class="buttonA" onclick="abrirModal('${g.foto_principal}','${g.nome}','${g.descricao}','${g.foto_principal}', '${g.idade}', '${g.sexo}', '${g.vacinado}', '${g.castrado}', '${g.raca}')" >Quero Adotar</a>
+                    </div>
                     <div class ="modal_gatos">
                         <img src="${g.foto_principal}" alt="" class="modal-img">
                         <h1 class="modal-titulo">${g.nome}</h1>
@@ -54,7 +55,6 @@ async function carregarGatos() {
                         <p class="raca">${g.raca}</p>
                         <button class="fechadorDeModal">Fechar</button>
                     </div>
-                </div>
         `)
 
 }

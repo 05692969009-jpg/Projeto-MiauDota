@@ -162,17 +162,16 @@ header {
     margin: 10px;
     transition: transform 0.3s;
     overflow: hidden;
-   
+    cursor: pointer;
     padding-bottom: 100px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
 }
 
 .card:hover {
-    cursor: pointer;
     background-color: #ececec62;
     transform: scale(1.01);
-}
+} 
 
 .buttonA {
     text-decoration: none;
@@ -197,7 +196,7 @@ header {
     transform: scale(0.9);
 
 
-}
+} 
 
 .card h2 {
     margin-left: 10px;
@@ -392,7 +391,11 @@ footer hr {
 display: none;
 top:0;
 left: 0;
-height: 500px;
+height: 5vh;
 width: 500px;
 
+}
+.modal_gatos img{
+    width: 250px;
+    height: 250px;
 }
